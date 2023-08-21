@@ -1,9 +1,19 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import App from './App'
-ReactDOM.render(
+import './index.css'
+import '../../node_modules/antd/dist/antd.min.css'
+import { BrowserRouter } from 'react-router-dom';
+import { createRoot } from 'react-dom/client';
+import LayoutComponent from './components/LayoutComponent'
+
+
+const container = document.getElementById('root');
+const root = createRoot(container!); 
+root.render(
 <React.StrictMode>
-<App />
-</React.StrictMode>,
-document.getElementById('root')
+<BrowserRouter>
+<LayoutComponent/>
+      <App />
+</BrowserRouter>
+</React.StrictMode>
 )

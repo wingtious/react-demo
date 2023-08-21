@@ -1,0 +1,73 @@
+.my-square {
+    background-color: red;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .my-circular {
+    background-color: rgb(9, 255, 0);
+    height: 200px;
+    width: 200px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .my-circular:hover {
+    height: 240px;
+    width: 240px;
+  }
+  
+  .my-circular1 {
+    background-color: rgb(9, 255, 0);
+    height: 200px;
+    width: 200px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  li {
+    text-align: -webkit-match-parent;
+  }
+  
+  .hdline0{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      vertical-align: baseline;
+  }
+  
+  .dot{
+    position: absolute;
+    top: 16px;
+    left: 0;
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: #da4453;
+    font-size: 0;
+    top: 25px;
+    padding-left: 10px;
+    line-height: 24px;
+    position: relative;
+    overflow: hidden;
+    font-style: italic;
+  }
+  
+  .hotnews{
+    padding-bottom: 2px; 
+  }
+  
+  .hotnews li {
+    padding-left: 10px;
+    line-height: 24px;
+    position: relative;
+    overflow: hidden;
+  }
