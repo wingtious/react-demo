@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
-import { Layout, Menu } from "antd"; 
-
-export default function AppLayout() {
+import { ConfigProvider } from 'antd'
+import 'antd/dist/reset.css'
+import zh_CN from 'antd/locale/zh_CN'
+import LayoutComponent from './LayoutComponent';
+export default function Main() {
   return (
-    <>   
-     123
-    </>
+    <ConfigProvider locale={zh_CN}>
+        <LayoutComponent></LayoutComponent>
+    </ConfigProvider>
   );
 }

@@ -1,38 +1,21 @@
-import React, { Component, createRef   } from 'react';  
-import './index.css';
-  
-class HoverComponent extends Component<any,any> {  
-  constructor(props:any) {  
-    super(props);  
-    console.log(111);
-    this.state = {
-    };  
-    this.handleClick = this.handleClick.bind(this);  
-  }
+import React, { Component } from 'react';  
+import { Progress, Space } from 'antd';
+import 'antd/dist/reset.css'
 
-  myinput=createRef<HTMLInputElement>()
+export default class HomeComponent extends Component<any, any> {  
+    constructor(props:any) {  
+      super(props);  
+    } 
 
-  handleClick(e : any) {  
-    console.log(this.myinput);
-    if(e.type=="mouseenter")
-    {
-      this.myinput.current?.setAttribute('style', 'width:250px');
-    }
-    else if(e.type =="mouseleave")
-    {
-      this.myinput.current?.setAttribute('style', 'width:200px');
-    }
-    console.log(this);
-  }  
-
-  
-  render() {  
-    return (  
-      <div>  
-        <div className='my-square'> <div ref={this.myinput} className='my-circular1' onMouseEnter={this.handleClick}  onMouseLeave={this.handleClick} ><p>b</p></div></div>
-      </div>  
-    );  
-  }  
-}  
-  
-export default HoverComponent;
+    render() {  
+      return (
+        <> 
+        <Space wrap>
+           <Progress type="circle" percent={25} />
+        </Space>
+        <p>任务完成度</p>
+        <a href='https://best-inc.feishu.cn/wiki/QHPlwPinAipUa5kVp3CcLyj8nxf'>任务链接</a>
+       </>
+      );  
+    }  
+}

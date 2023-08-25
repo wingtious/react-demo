@@ -1,0 +1,32 @@
+.my-square {
+    background-color: red;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .my-circular {
+    background-color: rgb(9, 255, 0);
+    height: 200px;
+    width: 200px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .my-circular:hover {
+    height: 240px;
+    width: 240px;
+  }
+  
+  .my-circular1 {
+    background-color: rgb(9, 255, 0);
+    height: 200px;
+    width: 200px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
