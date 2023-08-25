@@ -1,7 +1,7 @@
 import React, { Component } from 'react';  
 import Dialog from  '../../components/DialogComponent';
 import './index.css';
-import { NewsInfo } from '../../config/base.config';
+import { NewsInfo } from '../../store/data.config';
 
 
 interface IPageState{

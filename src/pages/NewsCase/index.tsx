@@ -2,7 +2,7 @@ import { Layout } from "antd";
 import { Col, Row ,Image,Carousel } from "antd";
 import Icon from '@ant-design/icons';
 import { LeftOutlined,RightOutlined } from '@ant-design/icons';
-import { NewsInfo } from '../../config/base.config';
+import { NewsInfo } from '../../store/data.config';
 import './index.css';
 export default function LayoutComponent() {
   const contentStyle: React.CSSProperties = {

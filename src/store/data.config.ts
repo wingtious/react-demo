@@ -1,15 +1,3 @@
-import { LaptopOutlined, NotificationOutlined, UserOutlined } from '@ant-design/icons';
-
-const SetInfo = {
-        SetName: 'React',
-        SetIcon:'reMark',
-        rules: [
-            {
-                required: false,
-            }
-        ],
-};
-
 const NewsInfo = {
     HotNews:[
         { 
@@ -80,4 +68,4 @@ const NewsInfo = {
     ]
 };
 
-export { SetInfo, NewsInfo }
+export { NewsInfo }
