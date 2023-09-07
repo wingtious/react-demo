@@ -1,0 +1,16 @@
+{
+  "header": {
+      "EnterName":"请输入你的账号",
+      "EnterPwd":"请输入你的密码",
+      "Borwer":"推荐使用浏览器：",
+      "signIn":"登陆"
+  },
+  "footer": {
+      "detail" : "版权所有 @ React"
+  },
+  "home": {
+      "hot_recommended": "爆款推荐",
+      "new_arrival": "新品上市",
+      "joint_venture": "合作企业"
+  }
+}

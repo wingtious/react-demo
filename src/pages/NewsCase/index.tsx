@@ -4,7 +4,7 @@ import Icon from '@ant-design/icons';
 import { LeftOutlined,RightOutlined } from '@ant-design/icons';
 import { NewsInfo } from '../../store/data.config';
 import './index.css';
-export default function LayoutComponent() {
+export default function NewsComponent() {
   const contentStyle: React.CSSProperties = {
     height: '160px',
     color: '#fff',

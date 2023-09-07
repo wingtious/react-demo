@@ -1,0 +1,42 @@
+.login
+{
+    background: #e6e6e6;
+    background-position: 50%;
+    background-size: 100% 100%;
+    min-height: 100%;
+    padding-top: 180px;
+    overflow: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;   
+}
+
+.login-panel{
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    background: #fff;
+}
+
+.login-borwer{
+    line-height: 25px;
+    color: #999;
+    font-size: 12px;
+}
+
+.login-borwer img
+{
+    height: 25px;
+    margin-right: 5px;
+}
+
+
+.login-img{
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    background: #fff;
+}

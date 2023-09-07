@@ -1,9 +1,14 @@
 import { Outlet ,useLocation, useNavigate, Routes } from 'react-router-dom';
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import {ConfigProvider,Layout, Menu, message   } from 'antd';
 import 'antd/dist/reset.css';
 import { router, menuItems,toolMenuItems } from '../router';
+import { useReduxSelector } from '../redux/hooks'
+import { login } from "../redux/reducer/loginReducer";
+
 const { Header, Content, Footer, Sider } = Layout;
+
+
 function  LayoutComponent() {
    const defaultPage = 'Home';
    const [collapsed, setCollapsed] = useState(false);
@@ -11,6 +16,16 @@ function  LayoutComponent() {
    const [currentToolPage,setcurrentToolPage] = useState(defaultPage);
    const location = useLocation();
    const navigate = useNavigate(); 
+   const user = useReduxSelector(state => state.login)
+
+   useEffect(() => {
+    debugger;
+     if(user.userid==0)
+     {
+      navigate('/Login',{ replace: true});
+     }
+  }, []);
+
    const SwitchPage=(value:string)=>{
     console.log(value);
     setCurrentPage(value);
@@ -33,6 +48,7 @@ function  LayoutComponent() {
           <h1>BEST Inc.</h1>
           <Menu theme="dark" mode="horizontal" items={toolMenuItems}  style={{ marginLeft:'auto' ,position: 'relative'}} selectable = {false} 
           onClick={(item)=>onClickTool(item.key)} />
+          {user.name}
         </Header>
         <Layout className='heigth'>
           <Sider width={200} collapsible collapsed = {collapsed} onCollapse={(value)=>setCollapsed(value)} >
